@@ -6,7 +6,7 @@
     "username": "",
     "password": "",
     "broker_ip": "localhost",
-    "broker_port": 1883,
+    "broker_port": 8001,
     "topic": "iot2tangle",
     "node": "https://chrysalis-nodes.iota.cafe:443",
     "local_pow": false
