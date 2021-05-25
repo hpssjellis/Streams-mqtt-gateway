@@ -8,7 +8,7 @@ tasks:
              
      command: echo "Start the .gitpod.yml installation"         &>> /workspace/Streams-mqtt-gateway/logs/logs.txt    && 
               echo "Install Rust"                              &>> /workspace/Streams-mqtt-gateway/logs/logs.txt     &&    
-              curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh                                         &&
+              curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y                                &&
               source /workspace/.cargo/env                                                                           &&                     
               echo " run cargo"          &>> /workspace/Streams-mqtt-gateway/logs/logs.txt                           &&     
               cargo run --release                                                                                    &&      
