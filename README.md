@@ -6,6 +6,29 @@
 
 Load a gitpod.io of this repository using this link   https://gitpod.io/#github.com/hpssjellis/Streams-mqtt-gateway
 
+seems to run but not with a normal Gitpod port. I can't seem to set 
+
+```
+process.env.PORT
+
+```
+
+
+
+
+
+
+
+.
+
+
+.
+
+
+.
+
+
+
 
 ## Preparation
 Install rust if you don't have it already, find the instructions here https://www.rust-lang.org/tools/install
