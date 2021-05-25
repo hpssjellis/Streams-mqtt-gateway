@@ -2,17 +2,14 @@ ports:
   - port: 8001
 
 tasks:
-  -  init: mkdir /workspace/my-gitpod-dockerfile-cordova/logs                                                          &&
-           touch /workspace/my-gitpod-dockerfile-cordova/logs.txt 
+  -  init: mkdir /workspace/Streams-mqtt-gateway/logs                                                                &&
+           touch /workspace/Streams-mqtt-gateway/logs/logs.txt 
                      
              
-     command: echo "Start the .gitpod.yml installation\n"         &>> /workspace/my-gitpod-dockerfile-cordova/logs.txt  && 
-     
-              echo "Install Rust \n"                              &>> /workspace/my-gitpod-dockerfile-cordova/logs.txt  &&    
-              curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh                                            &&
-              source /workspace/.cargo/env                                                                              &&
-                       
-              echo " run cargo  \n"          &>> /workspace/my-gitpod-dockerfile-cordova/logs.txt                       &&     
-              cargo run --release                                                                                       &&
-              
-              echo "Last line in logs\n"                          &>> /workspace/my-gitpod-dockerfile-cordova/logs.txt  
+     command: echo "Start the .gitpod.yml installation\n"         &>> /workspace/Streams-mqtt-gateway/logs/logs.txt  && 
+              echo "Install Rust \n"                              &>> /workspace/Streams-mqtt-gateway/logs/logs.txt  &&    
+              curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh                                         &&
+              source /workspace/.cargo/env                                                                           &&                     
+              echo " run cargo  \n"          &>> /workspace/Streams-mqtt-gateway/logs/logs.txt                       &&     
+              cargo run --release                                                                                    &&      
+              echo "Last line in logs\n"                          &>> /workspace/Streams-mqtt-gateway/logs/logs.txt  
